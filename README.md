@@ -4,9 +4,10 @@
 
 Crie sua conta no [Git Hub](https://github.com/)  se ainda não possuir uma.
 Crie um projeto público no Git Hub com o nome que desejar, mas `simpleFlask` seria apropriado para o que se pretende demonstrar.
-Lembre-se acresecentar ao projeto durante sua criação o "README.md" e o ".git ignore" sugeridos. 
+Lembre-se acresecentar ao projeto durante sua criação o `README.md` e o `.git ignore` sugeridos. 
 
 Dentro de um terminal qualquer digite o comando abaixo, para importar o projeto do repositório remoto do Git.
+Estou usando o Ubuntu 22.04 no WSL2.
 ```
 $ git clone https://github.com/lucioweb/simpleFlask.git
 ```
@@ -52,12 +53,24 @@ $ echo>hello.py
 ```
 Dentro do arquivo `hello.py` criado, digite ou cole, se ainda não tem habilidade suficiente com o Flask, as seguintes linhas de código:
 ```
-$ echo>hello.py
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 ```
-Como a lib do Flask está instalada em nosso projeto, vamos subir a aplicação com o segionte comando:
+Como a lib do Flask está instalada em nosso projeto, vamos subir a aplicação com o seguinte comando:
 ```
 $ flask --app hello run
 ```
+
+Ou no modo de depuração com o seguinte comando:
+```
+$ flask --app hello run --debug
+```
+
 Veremos no terminal o seguinte retorno, indicando que a aplicação foi carregada com sucesso:
 ```
  * Serving Flask app 'hello'
