@@ -86,4 +86,11 @@ Pronto!
 
 Está criando o seu projeto Pythoh - Flask, rodando na porta 5000, porta de escuta padrão utilizada pelo Python, emitindo uma mensagem de boas vindas.
 
+### ETAPA COMPLEMENTAR
 
+#### CRIANDO O ARQUIVO DE MANIFESTO `requirements.txt`
+Em vez de instalar pacotes individualmente, pip permite que você declare todas as dependências em um Arquivo de Requisitos.
+Por exemplo: você pode criar um arquivo `requirements.txt` na raiz do projeto, contendo todas as bibliotecas que deseja instalar e instalá-las com esssa linha de comando:
+```
+$ python3 -m pip install -r requirements.txt
+```
