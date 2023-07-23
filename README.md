@@ -35,6 +35,12 @@ Dentro do ambiente ativado, use o seguinte comando para instalar o Flask:
 ```
 (.venv) luciolemos@dev:~/my_python_projects/simpleFlask$ pip install flask
 ```
+
+Ou use um um Arquivo de Requisitos `requirements.txt` para instalar o flask e outras dependências:
+```
+(.venv) luciolemos@dev:~/my_python_projects/simpleFlask$ python3 -m pip install -r requirements.txt
+```
+
 Flask foi instalado com sucesso. As seguintes dependências foram instaladas dentro do ambiente ativado:
 ```
 Successfully installed 
